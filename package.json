@@ -1,6 +1,10 @@
 {
-  "name": "audio-player",
-  "version": "0.1.0",
+  "name": "audacious",
+  "version": "0.0.0-development",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CMessinides/audacious"
+  },
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
@@ -12,7 +16,9 @@
     "test:watch": "npx jest --watch --env=jsdom",
     "build": "npx tsc",
     "build:watch": "npx tsc --watch",
-    "prepare": "npx npm-run-all test build"
+    "prepare": "npx npm-run-all test build",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-0",
@@ -26,8 +32,10 @@
     "enzyme-to-json": "^3.3.4",
     "jest": "^23.4.2",
     "npm-run-all": "^4.1.3",
+    "semantic-release": "^15.9.5",
     "ts-jest": "^23.1.3",
-    "typescript": "^3.0.1"
+    "typescript": "^3.0.1",
+    "travis-deploy-once": "^5.0.2"
   },
   "dependencies": {
     "react": "^16.4.2",
